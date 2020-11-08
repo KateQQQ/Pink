@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    user-select: none;
+}
+
+.container input[type="checkbox"] + .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color: var(--white);
+    border: 2px solid var(--light-grey);
+}
+.container input[type="checkbox"]:hover + .checkmark {
+   border-color: var(--dark-blue);
+}
+.container input[type="checkbox"]:active + .checkmark {
+   border-color: var(--pink);
+}
+.container input:checked ~ .checkmark:after {
+   display: block;
+ }
+
+.container input[type="checkbox"]:checked + .checkmark::after {
+   left: 10px;
+   top: 3px;
+   width: 7px;
+   height: 17px;
+   position: absolute;
+   content: "";
+   border: solid var(--pink);
+   border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+}
+

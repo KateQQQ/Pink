@@ -1,0 +1,137 @@
+//= ./partials/head.html
+
+<main>
+    <div class="form-header">
+        //= ./template/header.html
+    <div class="form-header-inner">
+        
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+</div>
+    <div class="form-title">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Пожалуйста, заполните форму ниже:</p>
+    </div>
+    <form class="form">
+        <div class="form-name-info">
+
+
+            <label class="label"><span>Фамилия:</span>
+                <input class="input" type="text" required placeholder="Укажите фамилию *" />
+            </label>
+
+            <label class="label"><span>Имя:</span>
+                <input class="input" type="text" required placeholder="Введите ваше имя *" />
+            </label>
+            <label class="label"><span>Отчество:</span>
+                <input class="input" type="text" placeholder="Ну и отчество тоже" />
+            </label>
+
+        </div>
+        <section class="form-trip-info">
+
+            <fieldset>
+                <legend>Ваши безбашенные достижения в путешествии</legend>
+                <ul class="trip-info__list">
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="checkbox" name="photo" checked="checked">
+                            <span class="checkmark"></span>
+                            Сделал селфи с акулой
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="checkbox" name="bitch">
+                            <span class="checkmark"></span>
+                            Обгорел на пляже
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="checkbox" name="norris">
+                            <span class="checkmark"></span>
+                            Видел Чака Норриса
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="checkbox" name="souvenirs">
+                            <span class="checkmark"></span>
+                            Накупил сувениров
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="checkbox" name="tower">
+                            <span class="checkmark"></span>
+                            Удержал башню
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="checkbox" name="hotel">
+                            <span class="checkmark"></span>
+                            Разгромил отель
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+        </section>
+        <section class="form-phone-info">
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <label class="label"><span>Номер телефона</span>
+                    <input class="input" type="number" value="Номер, пожалуйста" placeholder="Номер, пожалуйста" />
+                    <div class="input__icon"><img src="img/mobile/icons/phone.png"></div>
+                </label>
+                <label class="label"><span>Адрес почты</span>
+                    <input class="input" type="email" required value="Введите почту *" placeholder="Введите почту *" />
+                    <div class="input__icon"><img src="img/mobile/icons/mail.png"></div>
+                </label>
+            </fieldset>
+        </section>
+        <section class="form-app-info">
+            <fieldset>
+                <legend>С каким приложением путешествовали?</legend>
+                <ul class="app-info__list">
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="radio" name="groop" checked="checked">
+                            <span class="checkmark"></span>
+                            Pink для iOS
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="radio" name="groop">
+                            <span class="checkmark"></span>
+                            Pink на Android
+                        </label>
+                    </li>
+                    <li>
+                        <label class="container">
+                            <input class="visually-hidden" type="radio" name="groop">
+                            <span class="checkmark"></span>
+                            Windows Phone
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+        <section class="form-emotion-info">
+            <fieldset>
+                <legend>Опишите свои эмоции</legend>
+                <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+            </fieldset>
+            <div class="form-submit-info">
+                <button type="submit" class="button button--submit">Отправить форму</button>
+                <p><span>*</span> — обязательные <span class="submit-info__text"> для заполнения</span> поля</p>
+            </div>
+        </section>
+    </form>
+</main>
+//= ./template/footer.html
+//= ./partials/footer.html

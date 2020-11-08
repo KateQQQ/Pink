@@ -1,0 +1,66 @@
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 35px;
+  background-color: transparent;
+  min-height: 56px;
+  cursor: pointer;
+  &--download {
+    border: 3px solid var(--white);
+    color: var(--white);
+    &:hover {
+      background-color: var(--white);
+      color: var(--pink);
+    }
+    &:active {
+      background-color: var(--white);
+      color: var(--pink-03);
+    }
+  }
+  &--upload {
+    border: 3px solid var(--pink);
+    color: var(--pink);
+    &:hover {
+      background-color: var(--pink);
+      color: var(--white);
+    }
+    &:active {
+      background-color: var(--pink);
+      color: var(--white-03);
+    }
+  }
+  &--cancel {
+    border: 3px solid var(--dark-blue-01);
+    color: var(--dark-blue-01);
+    &:hover {
+      background-color: transparent;
+      color: var(--dark-blue-03);
+      border: 3px solid var(--dark-blue-03);
+    }
+    &:active {
+      background-color: var(--dark-blue-03);
+      color: var(--white-03);
+
+      border: 3px solid var(--dark-blue-03);
+    }
+  }
+  &--submit {
+   
+    min-height: 59px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    &:hover {
+      background-color: var(--dark-green);
+      color: var(--white);
+    }
+    &:active {
+      background-color: var(--dark-green);
+      color: var(--white-03);
+    }
+  }
+}

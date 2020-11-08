@@ -1,0 +1,91 @@
+@media (max-width: 659px) {
+   .input__icon {
+       display: none;
+   }
+  .form {
+    &-phone-info {
+      legend {
+        display: none;
+      }
+    }
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .form {
+    legend {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    fieldset {
+      padding: 0 50px;
+      border: 2px solid var(--dark-blue-01);
+    }
+    &-emotion-info {
+      order: 5;
+    }
+    &-submit-info {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-top: 70px;
+      .button {
+        width: 300px;
+      }
+    }
+    &-phone-info {
+      order: 3;
+      legend {
+        display: block;
+      }
+      input {
+        margin-bottom: 60px;
+      }
+      span {
+        position: absolute;
+        transform: translateY(220%);
+      }
+    }
+    &-header-inner {
+      h1 {
+        font-size: 50px;
+        padding: 80px 50px;
+
+      }
+    }
+    &-trip-info {
+
+      order: 4;
+      background-color: var(--white);
+    }
+    &-app-info {
+      order: 2;
+      background-color: var(--white);
+    }
+    &-title {
+
+      p {
+        font-size: 18px;
+        margin: 70px 50px 70px 50px;
+      }
+    }
+    &-name-info {
+      order: 1;
+
+      label {
+        display: flex;
+        align-items: baseline;
+        span {
+          margin-left: 0;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+

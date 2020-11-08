@@ -1,0 +1,69 @@
+@media (min-width: 1440px) {
+  .slider {
+    width: 288px;
+  }
+  .filter {
+    &-range {
+      flex-basis: 80%;
+      input {
+        display: block;
+        margin: 33px 15px;
+      }
+    }
+    &-settings {
+      img {
+        width: 30px;
+        height: auto;
+      }
+    }
+    &-submition {
+      flex-basis: 56%;
+    }
+    &-buttons {
+      flex-direction: row;
+      justify-content: space-between;
+      button {
+        width: 183px;
+        padding: 0;
+      }
+    }
+  }
+  .photo {
+    &-filter {
+      width: 940px;
+      margin: 0 auto;
+      padding: 55px 80px;
+    }
+    &-cards {
+      &__group {
+        &--inner {
+          width: 940px;
+          margin: 0 auto;
+        }
+      }
+      &__item {
+        max-width: 300px;
+        margin: 10px 0;
+      }
+    }
+  }
+  .card {
+    max-width: 100%;
+    &__image {
+      height: 400px;
+      width: 300px;
+      overflow: hidden;
+    }
+    &__main-photo {
+      h3 {
+        right: 100px;
+      }
+    }
+    &__description {
+      &--first-image {
+        width: 940px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

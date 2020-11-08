@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.container input[type="radio"]:hover + .checkmark {
+    border-color: var(--dark-blue);
+ }
+ .container input[type="radio"]:active + .checkmark {
+    border-color: var(--pink);
+ }
+.container input[type="radio"] + .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--light-grey);
+    background-color: var(--white);
+}
+
+.container input[type="radio"]:checked + .checkmark::before {
+    position: absolute;
+    content: "";
+    top: 7.5px;
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:var(--pink);
+}
